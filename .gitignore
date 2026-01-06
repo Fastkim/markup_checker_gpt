@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# IDE
+.vscode/
+
+# Build / dist (배포 산출물)
+build/
+dist/
+
+# Env / secrets
+.env
+.env.*
