@@ -16,6 +16,7 @@ Chat GPT api를 활용한 웹 마크업오류방지 지침 탐색 프로그램, 
 - API키는 한번만 노출되므로 개인공간에 저장되어야하며, 외부에 키가 노출되면 안됨.
 - API키 설정으로 소프트웨어에 저장하면 시스템 내부 환경변수에 저장되는것이므로 API키를 변경하고 싶다면 새로 발급받은후 저장하면 새로운키로 덮어씌어짐
 - GPT의 분석내용을 가지고 맹신하면 안되며 리포터가 대상페이지 개발자도구에서 더블체크가 필요함.
+- 
 
 # 주요기능
 - 마크업 검사가 필요한 웹페이지 링크를 입력하여 검사버튼을 클릭하며 AI가 답변해줍니다.
@@ -41,6 +42,25 @@ Chat GPT api를 활용한 웹 마크업오류방지 지침 탐색 프로그램, 
    <img width="1899" height="845" alt="image" src="https://github.com/user-attachments/assets/7b8846db-a071-4057-9986-896fc5bb2116" />
 4. 생성된 빨간 박스안에 키를 별도의 개인공간에 Copy & Paste 하여 저장해놓기. <주의> 해당키는 외부에 노출되면 절대안됨.
 <br>
+
+# ChatGPT 결제정보 등록
+1. [결제정보 등록페이지 접속](https://platform.openai.com/settings/organization/billing/overview)
+2. 로그인 진행
+3. Add payment details 버튼 실행
+   <img width="1884" height="846" alt="image" src="https://github.com/user-attachments/assets/3799a1ef-c0cf-428e-bfef-c08d2b0a06d1" />
+4-1. 결제 카드정보 입력 (카드번호, 카드 유효기간, 카드 뒷면 보안번호)
+4-2. 카드앞면에 적힌 영문이름 (ex. DA HUN KIM)
+4-3. Country : Korea, Republic of | Address line 1 : 기본주소(도로명 + 번지) ex) 331 Nowon-ro | Address line 2 : 상세주소 (선택) ex) Apt 307-804 (앞에는 동,뒤에는 호)| City : 도시이름 ex)Seoul | Postal code : 우편번호 ex)01841 | State, country, province, or region : 주,도,광역지역 ex)Seoul
+4-4. Continue 버튼실행 (Purchasing as a business는 체크하지않아도 됨)
+   <img width="569" height="739" alt="image" src="https://github.com/user-attachments/assets/42d10dd2-527c-476c-84ea-6e3c2ef5aec5" />
+5-1. Initial credit purchase : 초기 충전금액, 입력가능범위: $5 ~ $100 (7천원 ~ 14만원), 최소로 충전하여도 괜찮음.
+5-2. Would you like to set up automatic recharge? => 자동 충전 설정하시겠습니까? 필요할경우 선택, 자동충전 체크박스 미선택시 아래 항목 모두 비활성화됨
+5-3. When credit balance goes below : 잔액이 이 금액보다 내려가면 자동충전
+5-4. Bring credit balance back up to : 자동 충전 시 잔액을 이 금액까지 채움
+5-5 Limit the amount of automatic recharge per month : 월 자동 충전 한도,
+5-6 Continue 버튼 실행
+   <img width="569" height="739" alt="image" src="https://github.com/user-attachments/assets/9e231bad-8808-4984-898b-adf7b80fbfe6" />
+
 
 # 프로그램 시작하기
 1. [릴리즈 페이지](https://github.com/Fastkim/markup_checker_gpt/releases/tag/v1.0.0)에서 최신 버전 다운로드
