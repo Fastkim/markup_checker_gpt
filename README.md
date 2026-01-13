@@ -1,5 +1,5 @@
 # MARKUP_CHECKER_GPT
-Chat GPT api를 활용한 웹 마크업오류방지 지침 탐색 프로그램, AI코딩으로 개발(ChatGPT 사용)
+Chat GPT api를 활용한 웹 마크업오류방지 지침 탐색 프로그램, 바이브코딩으로 개발(ChatGPT 활용)
 <br>
 
 # 왜 개발하였는가?
@@ -69,5 +69,5 @@ Chat GPT api를 활용한 웹 마크업오류방지 지침 탐색 프로그램, 
    <img width="1370" height="749" alt="image" src="https://github.com/user-attachments/assets/30c402ca-2e44-4853-96fe-d9454a916e16" />
 5. 검사할 대상페이지를 대상URL에 넣고 검사하기 버튼 실행
 6. GPT가 분석해준 내용 확인하기
-7. 내용을 지우고 싶다면 초기화버튼
+7. 내용을 지우고 싶다면 초기화버튼 실행
    <img width="987" height="749" alt="image" src="https://github.com/user-attachments/assets/a18df655-d9d3-4d1c-a82b-88feaaccd828" />
